@@ -12,8 +12,9 @@ Copy `AlertViewWithCallbackDelegate.swift` and `AlertViewWithCallback.swift` int
 
 ```Swift
 
-let alertView = UIAlertView(title: "Do you want to cancel this operation?", message: "",
-  delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK", "Cancel")
+let alertView = UIAlertView(title: "Do you want to cancel this operation?",
+  message: "", delegate: nil, cancelButtonTitle: nil,
+  otherButtonTitles: "OK", "Cancel")
 
 AlertViewWithCallback.show(alertView) { alertView, buttonIndex in
   println("You closed alert by tapping button #\(buttonIndex)")
