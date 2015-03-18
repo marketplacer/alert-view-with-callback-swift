@@ -32,3 +32,4 @@ HUGE thanks to **Arkku** for the [Objective-C example](http://stackoverflow.com/
 
 ## Project home
 
+https://github.com/exchangegroup/alert-view-with-callback-swift
