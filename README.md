@@ -21,6 +21,12 @@ AlertViewWithCallback.show(alertView) { alertView, buttonIndex in
 }
 ```
 
+## Demo
+
+<img src='https://raw.githubusercontent.com/exchangegroup/alert-view-with-callback-swift/master/graphics/uialertview_with_callback_swift_1.png' width='320'>
+
+<img src='https://raw.githubusercontent.com/exchangegroup/alert-view-with-callback-swift/master/graphics/uialertview_with_callback_swift_2.png' width='320'>
+
 ## Credit
 
 HUGE thanks to **Arkku** for the [Objective-C example](http://stackoverflow.com/a/9662147/297131).
