@@ -6,7 +6,7 @@ a delegate object.
 
 ## Setup
 
-Copy `AlertViewWithCallbackDelegate.swift` and `AlertViewWithCallback.swift` into your project.
+Copy [AlertViewWithCallbackDelegate.swift](https://raw.githubusercontent.com/exchangegroup/alert-view-with-callback-swift/master/AlertViewWithCallback/AlertViewWithCallbackDelegate.swift) and [AlertViewWithCallback.swift](https://raw.githubusercontent.com/exchangegroup/alert-view-with-callback-swift/master/AlertViewWithCallback/AlertViewWithCallback.swift) into your project.
 
 ## Usage
 
