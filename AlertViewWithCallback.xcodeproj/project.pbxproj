@@ -433,6 +433,7 @@
 				2B5951961AB942F6007B9E9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B5951971AB942F6007B9E9A /* Build configuration list for PBXNativeTarget "AlertViewWithCallbackTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +442,7 @@
 				2B5951991AB942F6007B9E9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
