@@ -14,6 +14,8 @@
 		2B5951851AB942F6007B9E9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5951831AB942F6007B9E9A /* LaunchScreen.xib */; };
 		2B5951911AB942F6007B9E9A /* AlertViewWithCallbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5951901AB942F6007B9E9A /* AlertViewWithCallbackTests.swift */; };
 		2B59519B1AB94333007B9E9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B59519A1AB94333007B9E9A /* Default-568h@2x.png */; };
+		2B59519E1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59519D1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift */; };
+		2B5951A01AB94648007B9E9A /* AlertViewWithCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59519F1AB94648007B9E9A /* AlertViewWithCallback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		2B59518F1AB942F6007B9E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B5951901AB942F6007B9E9A /* AlertViewWithCallbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallbackTests.swift; sourceTree = "<group>"; };
 		2B59519A1AB94333007B9E9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2B59519D1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallbackDelegate.swift; sourceTree = "<group>"; };
+		2B59519F1AB94648007B9E9A /* AlertViewWithCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		2B5951771AB942F6007B9E9A /* AlertViewWithCallback */ = {
 			isa = PBXGroup;
 			children = (
+				2B59519C1AB945E2007B9E9A /* Lib */,
 				2B59519A1AB94333007B9E9A /* Default-568h@2x.png */,
 				2B59517A1AB942F6007B9E9A /* AppDelegate.swift */,
 				2B59517C1AB942F6007B9E9A /* ViewController.swift */,
@@ -113,6 +118,15 @@
 				2B59518F1AB942F6007B9E9A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B59519C1AB945E2007B9E9A /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				2B59519D1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift */,
+				2B59519F1AB94648007B9E9A /* AlertViewWithCallback.swift */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B59519E1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift in Sources */,
 				2B59517D1AB942F6007B9E9A /* ViewController.swift in Sources */,
+				2B5951A01AB94648007B9E9A /* AlertViewWithCallback.swift in Sources */,
 				2B59517B1AB942F6007B9E9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

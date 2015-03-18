@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,28 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-TK-peB">
+                                <rect key="frame" x="16" y="336" width="568" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WND-nr-Nen">
-                                <rect key="frame" x="239" y="59" width="124" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Show Alert">
+                                <rect key="frame" x="231" y="256" width="140" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Show alert">
+                                    <color key="titleColor" red="0.74025195583363024" green="0.80513775045820846" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="onShowAlertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Gf-Ty-eTg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-TK-peB">
-                                <rect key="frame" x="280" y="135" width="40" height="20"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.67450980392156867" green="0.0" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="AZY-TK-peB" secondAttribute="centerX" id="1gc-uh-fg7"/>
+                            <constraint firstAttribute="centerY" secondItem="WND-nr-Nen" secondAttribute="centerY" constant="20" id="KT3-J7-eOu"/>
                             <constraint firstItem="AZY-TK-peB" firstAttribute="top" secondItem="WND-nr-Nen" secondAttribute="bottom" constant="32" id="WRq-vs-ZKM"/>
-                            <constraint firstItem="WND-nr-Nen" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="bBg-lA-ST9"/>
+                            <constraint firstItem="AZY-TK-peB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="f7i-26-dlZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AZY-TK-peB" secondAttribute="trailing" id="pue-Ow-jPJ"/>
                             <constraint firstAttribute="centerX" secondItem="WND-nr-Nen" secondAttribute="centerX" constant="-0.5" id="qZj-G9-tal"/>
                         </constraints>
                     </view>

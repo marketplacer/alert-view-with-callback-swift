@@ -17,12 +17,23 @@ class ViewController: UIViewController {
     
     label.text = ""
   }
+  
+  override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    return UIStatusBarStyle.LightContent
+  }
 
   @IBAction func onShowAlertTapped(sender: AnyObject) {
-    showAlertViewWithTextInput()
+    let alertView = createAlertView()
+    
+    AlertViewWithCallback.show(alertView) { alertView, index in
+      var name = alertView.textFieldAtIndex(0)?.text ?? ""
+      if name.isEmpty { name = "Princess Bubblegum" }
+      let buttonName = index == 0 ? "OK" : "Cancel"
+      self.label.text = "Hello, \(name)! You tapped \(buttonName) button."
+    }
   }
   
-  private func showAlertViewWithTextInput() {
+  private func createAlertView() -> UIAlertView {
     let alertView = UIAlertView(title: "Enter your name",
       message: "",
       delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK", "Cancel")
@@ -37,7 +48,7 @@ class ViewController: UIViewController {
       emailTextField.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     }
     
-    alertView.show()
+    return alertView
   }
 }
 
