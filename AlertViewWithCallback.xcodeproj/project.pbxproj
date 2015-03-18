@@ -13,6 +13,7 @@
 		2B5951821AB942F6007B9E9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5951811AB942F6007B9E9A /* Images.xcassets */; };
 		2B5951851AB942F6007B9E9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5951831AB942F6007B9E9A /* LaunchScreen.xib */; };
 		2B5951911AB942F6007B9E9A /* AlertViewWithCallbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5951901AB942F6007B9E9A /* AlertViewWithCallbackTests.swift */; };
+		2B59519B1AB94333007B9E9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B59519A1AB94333007B9E9A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2B59518A1AB942F6007B9E9A /* AlertViewWithCallbackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertViewWithCallbackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B59518F1AB942F6007B9E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B5951901AB942F6007B9E9A /* AlertViewWithCallbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallbackTests.swift; sourceTree = "<group>"; };
+		2B59519A1AB94333007B9E9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2B5951771AB942F6007B9E9A /* AlertViewWithCallback */ = {
 			isa = PBXGroup;
 			children = (
+				2B59519A1AB94333007B9E9A /* Default-568h@2x.png */,
 				2B59517A1AB942F6007B9E9A /* AppDelegate.swift */,
 				2B59517C1AB942F6007B9E9A /* ViewController.swift */,
 				2B59517E1AB942F6007B9E9A /* Main.storyboard */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5951801AB942F6007B9E9A /* Main.storyboard in Resources */,
+				2B59519B1AB94333007B9E9A /* Default-568h@2x.png in Resources */,
 				2B5951851AB942F6007B9E9A /* LaunchScreen.xib in Resources */,
 				2B5951821AB942F6007B9E9A /* Images.xcassets in Resources */,
 			);
@@ -343,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlertViewWithCallback/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlertViewWithCallback/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

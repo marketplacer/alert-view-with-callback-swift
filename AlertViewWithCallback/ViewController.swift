@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var label: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    label.text = ""
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  @IBAction func onShowAlertTapped(sender: AnyObject) {
+    showAlertViewWithTextInput()
   }
-
-
+  
+  private func showAlertViewWithTextInput() {
+    let alertView = UIAlertView(title: "Enter your name",
+      message: "",
+      delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK", "Cancel")
+    
+    alertView.cancelButtonIndex = 1
+    alertView.alertViewStyle = UIAlertViewStyle.PlainTextInput
+    
+    if let emailTextField = alertView.textFieldAtIndex(0) {
+      emailTextField.placeholder = "Name"
+      emailTextField.autocapitalizationType = UITextAutocapitalizationType.Sentences
+      emailTextField.autocorrectionType = UITextAutocorrectionType.Default
+      emailTextField.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    }
+    
+    alertView.show()
+  }
 }
 
