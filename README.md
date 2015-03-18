@@ -23,7 +23,7 @@ AlertViewWithCallback.show(alertView) { alertView, buttonIndex in
 
 ## Credit
 
-Thanks to **Arkku** for the [Objective-C example](http://stackoverflow.com/a/9662147/297131).
+HUGE thanks to **Arkku** for the [Objective-C example](http://stackoverflow.com/a/9662147/297131).
 
 ## Project home
 
