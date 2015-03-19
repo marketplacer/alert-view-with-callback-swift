@@ -27,7 +27,7 @@ public class AlertViewWithCallbackMock: AlertViewWithCallback {
     AlertViewWithCallbackDelegate.shared.callback!(testAlertView!, tapButtonWithIndex)
   }
 
-  // Taps a butons that has the caption
+  // Taps a button with the caption
   public func tapButton(caption: String) {
     var buttonIndex: Int? = nil
 
