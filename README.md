@@ -21,13 +21,13 @@ AlertViewWithCallback().show(alertView) { alertView, buttonIndex in
 }
 ```
 
-## Unit test friendly
+## Testing alert view
 
-It is easy to verify your alert functionality in unit tests.
-It can be done by subclassing `AlertViewWithCallback` in tests and injecting the object into your code.
+It is easy to verify your alert view functionality in unit tests. You can verify the title, text inputs and buttons of the alert view. In addition, one can emulate user entering text into the text imputs and tapping a button.
 
-We have already done it in `AlertViewWithCallbackMock.swift` file with `AlertViewWithCallbackMock` class.
+In order to test your alert view simply add [AlertViewWithCallbackMock.swift](https://raw.githubusercontent.com/exchangegroup/alert-view-with-callback-swift/master/AlertViewWithCallback/AlertViewWithCallbackMock.swift) to your project and inject `AlertViewWithCallbackMock` into your app from the unit test.
 
+This is demonstrated in [this unit test](https://raw.githubusercontent.com/exchangegroup/alert-view-with-callback-swift/master/AlertViewWithCallbackTests/AlertViewWithCallbackTests.swift).
 
 ## Demo
 
