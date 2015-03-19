@@ -1,6 +1,5 @@
 //
-//  AlertViewWithCallbackTests.swift
-//  AlertViewWithCallbackTests
+//  This is an example of testing alert view functionality.
 //
 //  Created by Evgenii Neumerzhitckii on 18/03/2015.
 //  Copyright (c) 2015 The Exchange Group Pty Ltd. All rights reserved.
@@ -8,29 +7,48 @@
 
 import UIKit
 import XCTest
+import AlertViewWithCallback
 
 class AlertViewWithCallbackTests: XCTestCase {
+  
+  func testShowAlert() {
+    let alertMock = AlertViewWithCallbackMock()
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    ViewController.showAlert(alertMock) { name, buttonCaption in }
+    
+    // Verify alert title
+    // ------------------------------
+    
+    XCTAssertEqual("Enter your name", alertMock.testAlertView!.title)
+    
+    // Verify alert buttons
+    // ------------------------------
+    
+    XCTAssertEqual(2, alertMock.testAlertView!.numberOfButtons)
+    XCTAssertEqual("OK", alertMock.testAlertView!.buttonTitleAtIndex(0))
+    XCTAssertEqual("Cancel", alertMock.testAlertView!.buttonTitleAtIndex(1))
+  }
+  
+  func testShowAlert_returnNameAndButtonCaption() {
+    let alertMock = AlertViewWithCallbackMock()
+    
+    var resultName: String?
+    var resultButtonCaption: String?
+    
+    ViewController.showAlert(alertMock) { name, buttonCaption in
+      resultName = name
+      resultButtonCaption = buttonCaption
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    // Simulate entering text into alert
+    alertMock.testAlertView!.textFieldAtIndex(0)!.text = "Gunter"
+    alertMock.tapButton("OK")
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    // Check the returned values
+    // ------------------------------
     
+    XCTAssertEqual("Gunter", resultName!)
+    XCTAssertEqual("OK", resultButtonCaption!)
+  }
 }

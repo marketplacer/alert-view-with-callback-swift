@@ -8,32 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
 
   @IBOutlet weak var label: UILabel!
   
-  override func viewDidLoad() {
+  override public func viewDidLoad() {
     super.viewDidLoad()
     
     label.text = ""
   }
   
-  override func preferredStatusBarStyle() -> UIStatusBarStyle {
+  override public func preferredStatusBarStyle() -> UIStatusBarStyle {
     return UIStatusBarStyle.LightContent
   }
 
   @IBAction func onShowAlertTapped(sender: AnyObject) {
-    let alertView = createAlertView()
-    
-    AlertViewWithCallback.show(alertView) { alertView, index in
-      var name = alertView.textFieldAtIndex(0)?.text ?? ""
-      if name.isEmpty { name = "Princess Bubblegum" }
-      let buttonName = index == 0 ? "OK" : "Cancel"
+    ViewController.showAlert(AlertViewWithCallback()) { name, buttonName in
       self.label.text = "Hello, \(name)! You tapped \(buttonName) button."
     }
   }
   
-  private func createAlertView() -> UIAlertView {
+  public class func showAlert(alertWithCallback: AlertViewWithCallback,
+    onResult: (String,String)->()) {
+      
+    let alertView = createAlertView()
+
+    alertWithCallback.show(alertView) { alertView, index in
+      var name = alertView.textFieldAtIndex(0)?.text ?? ""
+      if name.isEmpty { name = "Princess Bubblegum" }
+      let buttonName = index == 0 ? "OK" : "Cancel"
+      
+      onResult(name, buttonName)
+    }
+  }
+  
+  private class func createAlertView() -> UIAlertView {
     let alertView = UIAlertView(title: "Enter your name",
       message: "",
       delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK", "Cancel")

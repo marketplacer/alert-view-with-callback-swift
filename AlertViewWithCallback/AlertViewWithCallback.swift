@@ -5,8 +5,10 @@
 
 import UIKit
 
-struct AlertViewWithCallback {
-  static func show(alert: UIAlertView, onButtonTapped: ((UIAlertView, Int)->())?) {
+public class AlertViewWithCallback {
+  public init() { }
+
+  func show(alert: UIAlertView, onButtonTapped: ((UIAlertView, Int)->())?) {
     AlertViewWithCallbackDelegate.shared.callback = onButtonTapped
     alert.delegate = AlertViewWithCallbackDelegate.shared
     alert.show()

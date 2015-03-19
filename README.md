@@ -16,10 +16,18 @@ let alertView = UIAlertView(title: "Do you want to cancel this operation?",
   message: "", delegate: nil, cancelButtonTitle: nil,
   otherButtonTitles: "OK", "Cancel")
 
-AlertViewWithCallback.show(alertView) { alertView, buttonIndex in
+AlertViewWithCallback().show(alertView) { alertView, buttonIndex in
   println("You closed alert by tapping button #\(buttonIndex)")
 }
 ```
+
+## Unit test friendly
+
+It is easy to verify your alert functionality in unit tests.
+It can be done by subclassing `AlertViewWithCallback` in tests and injecting the object into your code.
+
+We have already done it in `AlertViewWithCallbackMock.swift` file with `AlertViewWithCallbackMock` class.
+
 
 ## Demo
 
