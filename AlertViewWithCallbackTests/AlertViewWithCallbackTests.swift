@@ -44,7 +44,6 @@ class AlertViewWithCallbackTests: XCTestCase {
     alertMock.testAlertView!.textFieldAtIndex(0)!.text = "Gunter"
     alertMock.tapButton("OK")
     
-    
     // Check the returned values
     // ------------------------------
     
