@@ -1,5 +1,5 @@
 //
-//  This file is injected into the app from unit test for verifying the
+//  This file is unsed in unit tests. It is injected into the app from a unit test to verify the
 //  alert view functionality.
 //
 //  Created by Evgenii Neumerzhitckii on 19/03/2015.
