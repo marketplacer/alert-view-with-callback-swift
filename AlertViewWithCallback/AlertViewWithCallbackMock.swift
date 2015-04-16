@@ -2,9 +2,6 @@
 //  This file is unsed in unit tests. It is injected into the app from a unit test to verify the
 //  alert view functionality.
 //
-//  Created by Evgenii Neumerzhitckii on 19/03/2015.
-//  Copyright (c) 2015 The Exchange Group Pty Ltd. All rights reserved.
-//
 
 import UIKit
 

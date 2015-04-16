@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  AlertViewWithCallback
-//
-//  Created by Evgenii Neumerzhitckii on 18/03/2015.
-//  Copyright (c) 2015 The Exchange Group Pty Ltd. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
