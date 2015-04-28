@@ -36,8 +36,8 @@ public class AlertViewWithCallbackMock: AlertViewWithCallback {
       }
     }
 
-    if let currentButtonIndex = buttonIndex {
-      tapButton(currentButtonIndex)
+    if let buttonIndex = buttonIndex {
+      tapButton(buttonIndex)
     } else {
       NSException(
         name: "Button with caption \(caption) does not exist in alert view.",
