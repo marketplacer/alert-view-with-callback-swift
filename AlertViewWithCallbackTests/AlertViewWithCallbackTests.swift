@@ -22,8 +22,8 @@ class AlertViewWithCallbackTests: XCTestCase {
     // ------------------------------
     
     XCTAssertEqual(2, alertMock.testAlertView!.numberOfButtons)
-    XCTAssertEqual("OK", alertMock.testAlertView!.buttonTitleAtIndex(0))
-    XCTAssertEqual("Cancel", alertMock.testAlertView!.buttonTitleAtIndex(1))
+    XCTAssertEqual("OK", alertMock.testAlertView!.buttonTitleAtIndex(0)!)
+    XCTAssertEqual("Cancel", alertMock.testAlertView!.buttonTitleAtIndex(1)!)
   }
   
   func testShowAlert_returnNameAndButtonCaption() {

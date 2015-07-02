@@ -14,9 +14,9 @@
 		2B5951851AB942F6007B9E9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5951831AB942F6007B9E9A /* LaunchScreen.xib */; };
 		2B5951911AB942F6007B9E9A /* AlertViewWithCallbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5951901AB942F6007B9E9A /* AlertViewWithCallbackTests.swift */; };
 		2B59519B1AB94333007B9E9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B59519A1AB94333007B9E9A /* Default-568h@2x.png */; };
-		2B59519E1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59519D1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift */; };
-		2BC047161ABA8479005C801F /* AlertViewWithCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC047141ABA8479005C801F /* AlertViewWithCallback.swift */; };
-		2BC047171ABA8479005C801F /* AlertViewWithCallbackMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC047151ABA8479005C801F /* AlertViewWithCallbackMock.swift */; };
+		2B6E3DAD1B44EE2200F02FAA /* AlertViewWithCallbackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E3DAA1B44EE2200F02FAA /* AlertViewWithCallbackDelegate.swift */; };
+		2B6E3DAE1B44EE2200F02FAA /* AlertViewWithCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E3DAB1B44EE2200F02FAA /* AlertViewWithCallback.swift */; };
+		2B6E3DAF1B44EE2200F02FAA /* AlertViewWithCallbackMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E3DAC1B44EE2200F02FAA /* AlertViewWithCallbackMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +41,9 @@
 		2B59518F1AB942F6007B9E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B5951901AB942F6007B9E9A /* AlertViewWithCallbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallbackTests.swift; sourceTree = "<group>"; };
 		2B59519A1AB94333007B9E9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2B59519D1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallbackDelegate.swift; sourceTree = "<group>"; };
-		2BC047141ABA8479005C801F /* AlertViewWithCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallback.swift; sourceTree = "<group>"; };
-		2BC047151ABA8479005C801F /* AlertViewWithCallbackMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallbackMock.swift; sourceTree = "<group>"; };
+		2B6E3DAA1B44EE2200F02FAA /* AlertViewWithCallbackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallbackDelegate.swift; sourceTree = "<group>"; };
+		2B6E3DAB1B44EE2200F02FAA /* AlertViewWithCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallback.swift; sourceTree = "<group>"; };
+		2B6E3DAC1B44EE2200F02FAA /* AlertViewWithCallbackMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewWithCallbackMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +125,9 @@
 		2B59519C1AB945E2007B9E9A /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				2B59519D1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift */,
-				2BC047141ABA8479005C801F /* AlertViewWithCallback.swift */,
-				2BC047151ABA8479005C801F /* AlertViewWithCallbackMock.swift */,
+				2B6E3DAA1B44EE2200F02FAA /* AlertViewWithCallbackDelegate.swift */,
+				2B6E3DAB1B44EE2200F02FAA /* AlertViewWithCallback.swift */,
+				2B6E3DAC1B44EE2200F02FAA /* AlertViewWithCallbackMock.swift */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -176,7 +176,8 @@
 		2B59516D1AB942F6007B9E9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "The Exchange Group Pty Ltd";
 				TargetAttributes = {
 					2B5951741AB942F6007B9E9A = {
@@ -233,10 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B59519E1AB94605007B9E9A /* AlertViewWithCallbackDelegate.swift in Sources */,
+				2B6E3DAD1B44EE2200F02FAA /* AlertViewWithCallbackDelegate.swift in Sources */,
 				2B59517D1AB942F6007B9E9A /* ViewController.swift in Sources */,
-				2BC047161ABA8479005C801F /* AlertViewWithCallback.swift in Sources */,
-				2BC047171ABA8479005C801F /* AlertViewWithCallbackMock.swift in Sources */,
+				2B6E3DAE1B44EE2200F02FAA /* AlertViewWithCallback.swift in Sources */,
+				2B6E3DAF1B44EE2200F02FAA /* AlertViewWithCallbackMock.swift in Sources */,
 				2B59517B1AB942F6007B9E9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +301,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -369,6 +371,7 @@
 				INFOPLIST_FILE = AlertViewWithCallback/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.theexchangegroup.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -380,6 +383,7 @@
 				INFOPLIST_FILE = AlertViewWithCallback/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.theexchangegroup.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -398,6 +402,7 @@
 				);
 				INFOPLIST_FILE = AlertViewWithCallbackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.theexchangegroup.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlertViewWithCallback.app/AlertViewWithCallback";
 			};
@@ -413,6 +418,7 @@
 				);
 				INFOPLIST_FILE = AlertViewWithCallbackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.theexchangegroup.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlertViewWithCallback.app/AlertViewWithCallback";
 			};
