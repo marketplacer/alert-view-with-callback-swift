@@ -1,8 +1,17 @@
+
+
 # Show UIAlertView with callback closure in Swift
 
 This is a helper function that allows you to show an UIAlertView and supply a callback
 closure to receive user input from it. It allows to use the UIAlertView without supplying
 a delegate object.
+
+## Deprecation notice
+
+As you probably know UIAlertView is deprecated by Apple. Here is a replacement library for creating testable UIAlertController alerts:
+
+https://github.com/exchangegroup/TestableAlert
+
 
 ## Setup
 
